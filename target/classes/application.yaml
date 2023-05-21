@@ -1,0 +1,44 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    password: 281199
+    url: jdbc:postgresql://localhost:5432/app_chat
+    username: postgres
+  #    password: X-UcF7Hmb7VwsnOEQOfv9YNixyOZTsuj
+  #    url: jdbc:postgresql://tiny.db.elephantsql.com/riiywshg
+  #    username: riiywshg
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
+  messages:
+    basename: i18n/messages
+  web:
+    locale: vi
+    locale-resolver: fixed
+
+viet:
+  app:
+    jwtExpirationMs: 86400000
+    jwtRefreshExpirationMs: 864000000
+    jwtSecret: helohehehihi
+    cloud_name: dimdlrse2
+    api_key: 421331454431998
+    api_secret: 51sGIP0Nw0ZbyfRlp9XqohYZLKk
+
+email:
+  fromEmail: bookingcare666@gmail.com
+  password: bmoqhrufffwexozg
+
+
+
